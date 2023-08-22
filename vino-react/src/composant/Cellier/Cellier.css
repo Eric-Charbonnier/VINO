@@ -1,0 +1,527 @@
+/******************/
+/*    Cellier     */
+/******************/
+
+.cellier {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  row-gap: 20px;
+  column-gap: 20px;
+  width: 100%;
+  justify-items: center;
+  list-style-type: none;
+}
+
+.cellier a {
+  text-decoration: none;
+}
+
+.cellier__titre {
+  margin: 30px 10px;
+  text-align: center;
+}
+
+.cellier__carte {
+  width: 350px;
+  height: 200px;
+  background-color: var(--rouge-variant-color);
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: #80033080 0px 3px 8px 0px;
+}
+
+.cellier__carte:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.cellier__carte__content {
+  display: flex;
+  flex-grow: 1;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.cellier__carte--image {
+  width: 50%;
+}
+
+.cellier__infos {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--rouge-color-alpha);
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.cellier__infos--quantite {
+  font-size: 20px;
+  color: var(--blanc-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cellier__infos--nom {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  color: var(--blanc-color);
+  text-transform: capitalize;
+  flex-grow: 1;
+}
+
+.cellier__infos--edit {
+  width: 18px;
+}
+
+.cellier__infos--edit:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.cellier__ajouter {
+  text-align: center;
+  margin: 30px;
+}
+
+.cellier__ajouter img {
+  width: 60px;
+}
+
+.cellier__ajouter:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.cellier__ajouter_style:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.cellier__icones--position {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.cellier__cartes--iconeRotation {
+  width: 40px;
+  margin-left: 15px;
+  margin-bottom: 7px;
+}
+
+.cellier__cartes--iconeRotation:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.cellier__iconeGrp--position {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cellier__cartes--iconeBalais {
+  width: 45px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+/******************/
+/*   Bouteille    */
+/******************/
+
+.recherche {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 10px;
+}
+
+.recherche h1 {
+  text-transform: capitalize;
+}
+
+.recherche__wrapper input {
+  border: none;
+  border-style: hidden;
+  border-bottom: 1px solid var(--gris-pale-color);
+  outline: none;
+  font-size: 18px;
+  padding: 5px;
+  width: 33vw;
+}
+
+.recherche__wrapper input:focus {
+  border-bottom-style: solid;
+}
+
+.recherche__icone {
+  width: 30px;
+}
+
+.recherche__nettoyer {
+  position: absolute;
+  right: 10px;
+}
+
+.filtre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 10px;
+  padding: 10px;
+}
+
+.filtre__btn {
+  width: 130px;
+  padding: 5px 10px;
+  border: 2px solid var(--rouge-color);
+  border-radius: 30px;
+  background-color: var(--blanc-color);
+  color: var(--rouge-color);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.filtre__btn__negative{
+  width: 130px;
+  padding: 5px 10px;
+  border: 2px solid var(--blanc-color);
+  border-radius: 30px;
+  background-color: var(--rouge-color);
+  color: var(--blanc-color);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bouteille {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  row-gap: 9px;
+  width: 100%;
+  justify-items: center;
+}
+
+.bouteille__carte {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid var(--gris-pale-color);
+  border-radius: 15px;
+  box-shadow: rgba(136, 165, 191, 0.48) 0px 3px 8px 0px;
+}
+
+.bouteille__carte:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.bouteille__img {
+  height: 93px;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.bouteille__nom {
+  font-size: 15px;
+  font-weight: bold;
+  justify-self: flex-start;
+}
+
+.bouteille__quantite {
+  font-size: 16px;
+  padding: 5px;
+  margin: 2px;
+}
+
+.bouteille p {
+  color: black;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+}
+
+.bouteille__infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bouteille__infos--quantite {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
+}
+
+.bouteille__infos--bouton {
+  background-color: var(--gris-pale-color);
+  border-radius: 5px;
+  width: 40px;
+    height: 25px;
+}
+
+.bouteille__infos--bouton:hover {
+  background-color: var(--rouge-color);
+  color: var(--blanc-color);
+  transition: 0.2s;
+}
+
+.bouteille__ajouter {
+  text-align: center;
+  margin: 20px;
+  margin-top: 40px;
+}
+
+.bouteille__ajouter img {
+  width: 60px;
+  margin: 5px;
+}
+
+.bouteille__ajouter--hover:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.bouteille__modifier {
+  width: 29px;
+  height: auto;
+  cursor: pointer;
+}
+
+.bouteille__modifier:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.bouteille__logoSaq {
+  width: 22px;
+  height: auto;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.bouteille__logoSaq:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.bouteille__supprimer {
+  width: 30px;
+  height: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.bouteille__supprimer:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.bouteille__icones {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  align-items: flex-start;
+}
+
+.icone-infos {
+  position: absolute;
+  top: 13%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 30px;
+}
+
+.icone-nbr-bouteille {
+  width: 22px;
+  height: auto;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.bouteille__text--position {
+  display: flex;
+}
+
+/* ********************************
+Creer un cellier
+******************************** */
+
+.cellier__titre {
+  color: var(--rouge-color);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 65px;
+}
+
+.cellier__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.cellier__input--nom {
+  border: none;
+  border-bottom: 2px solid #ddd;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  width: 100%;
+  background-color: transparent;
+}
+
+.cellier__input--nom::placeholder {
+  color: #aaa;
+}
+
+.cellier__btn--div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cellier__btn--style {
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+}
+
+.cellier__btn--creer {
+  background-color: var(--rouge-color);
+  color: var(--blanc-color);
+}
+
+.cellier__btn--creer:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.cellier__btn--retour {
+  color: var(--rouge-color);
+  align-items: center;
+}
+
+.cellier__btn--retour:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.cellier__supprimer {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.cellier__supprimer:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.cellier__aucunCellier--position {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/*******************************************/
+/*    Cellier detail / cellierShow     */
+/*******************************************/
+
+.ajout__btn--style {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 60%;
+}
+
+.ajout__btn--position {
+  display: flex;
+  justify-content: center;
+}
+
+.input__ajouterCellier {
+  max-width: 300px;
+}
+
+/* ********
+carte tournante: https://codepen.io/mondal10/pen/WNNEvjV
+https://codepen.io/Koverzneva/pen/GRXoomy
+******** */
+.flip-container.hover .bouteille__carte--tourner {
+  transform: rotateY(180deg);
+}
+
+.flip-container,
+.bouteille__carte--avant,
+.bouteille__carte--arriere {
+  width: 175px;
+  height: 180px;
+}
+
+.flip-container .bouteille__carte--tourner {
+  transform: rotateY(0deg);
+}
+
+.bouteille__carte--tourner {
+  transition: 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.bouteille__carte--avant,
+.bouteille__carte--arriere {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bouteille__carte--avant {
+  display: flex;
+  transform: rotateY(0deg);
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bouteille__carte--arriere {
+  transform: rotateY(180deg);
+  background-color: whitesmoke;
+  line-height: 1.5;
+  align-items: flex-start;
+}
