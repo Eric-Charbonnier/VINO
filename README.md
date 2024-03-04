@@ -20,9 +20,6 @@
 ## Description
 Vino est une application web permettant à ses utilisateurs de gérer leur(s) cellier(s) de vin. Ce projet a été réalisé dans le cadre d'un cours de développement web en utilisant la méthodologie de gestion de projet Agile/Scrum. Le site est compatible avec les principales plateformes (Mac, PC, Android et iOS) et les principaux navigateurs (Edge, Chrome, Firefox et Safari).
 
-## Lien vers le projet:
-🌐 [https://vino.lesdeuxsauces.com/](https://vino.lesdeuxsauces.com/)
-
 ## lien vers le projet sur GitHub
 🌐 [https://github.com/LesDeuxSauces/vinoProjetWeb2
 ](https://github.com/LesDeuxSauces/vinoProjetWeb2
